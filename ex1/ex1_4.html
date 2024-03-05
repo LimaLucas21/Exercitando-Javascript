@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="ept-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+    </head>
+    <body>
+        Valor do jantar<input type="text" id="valorJantar" value="">
+        <button onclick="enviar()">confirmar</button>
+        <script>
+            function enviar(){
+                let valorJantar = Number(document.getElementById("valorJantar").value)
+                let total = valorJantar + (valorJantar * 0.1)
+                alert(`o total a pagar é ${total}`)
+            }
+        </script>
+    </body>
+</html>
